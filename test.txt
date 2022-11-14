@@ -1,0 +1,126 @@
+Text(
+                        'Input Parameters',
+                        style: TextStyle(
+                          color: Color.fromRGBO(17, 11, 85, 1),
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.w500,
+                          height: 1.2,
+                        ),
+                      ),
+                      Text(
+                        'Fill in required info',
+                        style: TextStyle(
+                          color: Color.fromRGBO(17, 11, 85, 1),
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.w300,
+                          height: 1.2,
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      Data_input(question: 'Weight of the car', unit: 'Kg'),
+                      Data_input(question: 'Tire diameter', unit: 'in'),
+                      Data_input(question: 'Frontal area of car', unit: 'm'),
+                      Data_input(
+                          question: 'Maximum speed of car', unit: 'kmph'),
+                      Data_input(
+                          question: 'Top speed achieving time', unit: 'sec'),
+                      Data_input(
+                          question: 'Coefficint of rolling resistance',
+                          unit: ''),
+                      Data_input(question: 'Coefficient of air drag', unit: '').
+
+                      ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        minimumSize: Size(131, 36),
+                        side: BorderSide(
+                          color: Color.fromRGBO(219, 116, 21, 1),
+                        ),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0)),
+                      ),
+                      child: Text(
+                        'RESET',
+                        style: TextStyle(
+                            color: Color.fromRGBO(219, 116, 21, 1),
+                            fontSize: 13.0,
+                            height: 1.2,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color.fromRGBO(219, 116, 21, 1),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0)),
+                        padding: EdgeInsets.symmetric(
+                            vertical: 5.0, horizontal: 40.0),
+                      ),
+                      child: Text(
+                        'SUBMIT',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 13.0,
+                            height: 1.2,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+
+                    Text(
+                            'Output parameters',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.w600,
+                              height: 1.2,
+                            ),
+                          ),
+                          SizedBox(height: 20),
+                          Data_output(
+                            outputParam: 'Maximum accelration',
+                            outputVal: '0',
+                            outputValUnit: 'm/s',
+                          ),
+                          Data_output(
+                              outputParam: 'Total tractive power',
+                              outputVal: '0',
+                              outputValUnit: 'W'),
+                          Data_output(
+                              outputParam: 'Starting torque',
+                              outputVal: '0',
+                              outputValUnit: 'Nm'),
+                          Data_output(
+                              outputParam: 'Top speed of the car',
+                              outputVal: '0',
+                              outputValUnit: 'kmph'),
+                          Data_output(
+                              outputParam: 'Torque to maintain top speed',
+                              outputVal: '0',
+                              outputValUnit: 'Nm'),
+                          Data_output(
+                              outputParam: 'Max RPM at wheel',
+                              outputVal: '0',
+                              outputValUnit: 'rpm'),
+                          SizedBox(height: 15.0),
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Color.fromRGBO(17, 11, 85, 1),
+                              minimumSize: const Size.fromHeight(45.0),
+                              side: BorderSide(
+                                color: Color.fromRGBO(219, 116, 21, 1),
+                              ),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0)),
+                            ),
+                            child: Text(
+                              'PRINT REPORT',
+                              style: TextStyle(
+                                  color: Color.fromRGBO(219, 116, 21, 1),
+                                  fontSize: 13.0,
+                                  fontWeight: FontWeight.w600),
+                            ),
+                          ),
+                          SizedBox(height: 20),
